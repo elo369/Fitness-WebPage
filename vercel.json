@@ -1,0 +1,8 @@
+{
+  "build": {
+    "env": {
+      "NODE_OPTIONS": "--no-experimental-fetch",
+      "ROLLUP_WASM": "true"
+    }
+  }
+}

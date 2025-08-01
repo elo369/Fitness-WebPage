@@ -45,6 +45,7 @@ export const Services = () => {
             Comprehensive fitness solutions designed to help you achieve your goals, 
             whether you're just starting out or training for competition.
           </p>
+          
         </div>
 
         {/* Services Grid */}
