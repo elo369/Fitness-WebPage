@@ -1,3 +1,6 @@
+// ✅ Force Rollup to use WASM (no native bindings)
+process.env.ROLLUP_WASM = 'true';
+
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
