@@ -57,24 +57,24 @@ export const Navigation = () => {
           {/* Mobile Menu Button */}
           <div className="md:hidden">
             <Button
-              variant="ghost"
+              className="ghost"
               size="sm"
               onClick={() => setIsOpen(!isOpen)}
             >
-              {isOpen ? <X size={24} /> : <Menu size={24} />}
+              {isOpen ? <X size={30} /> : <Menu size={30} />}
             </Button>
           </div>
         </div>
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden bg-white/95 backdrop-blur-md border-t border-border/50 animate-slide-down">
-            <div className="py-4 space-y-4">
+          <div className="md:hidden bg-white/95 backdrop-blur-md border-t rounded-md border-border/50 animate-slide-down">
+            <div className="py-4 space-y-4 ">
               {navItems.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
-                  className="block px-4 py-2 text-foreground hover:text-primary transition-colors duration-300 font-medium"
+                  className="flex justify-center px-4 py-2 text-foreground hover:text-primary transition-colors duration-300 font-medium "
                   onClick={() => setIsOpen(false)}
                 >
                   {item.name}
