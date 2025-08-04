@@ -12,7 +12,7 @@ export const Hero = () => {
       <div className="absolute inset-0  bg-[#0000009e]" />
       
       {/* Content */}
-      <div className="relative z-10 text-center px-4 max-w-4xl py-12 sm:py-0 mx-auto">
+      <div className="relative z-10 text-center px-4 max-w-4xl py-14 sm:py-0 mx-auto">
         <h1 className="text-5xl md:text-7xl font-bold text-white mb-6  animate-fade-in">
           Transform Your Life at
           <span className="block   text-8xl items-center text-transparent bg-clip-text bg-gradient-primary bg-black p-6">

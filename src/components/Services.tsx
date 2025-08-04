@@ -36,7 +36,7 @@ export const Services = () => {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-3xl md:text-6xl font-bold mb-6">
+          <h2 className="text-4xl md:text-6xl font-bold mb-6">
             Our 
             <span className="text-transparent bg-clip-text bg-gradient-primary ml-3">
               Services

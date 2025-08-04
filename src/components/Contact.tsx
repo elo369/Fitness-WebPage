@@ -51,7 +51,7 @@ export const Contact = () => {
           {contactInfo.map((item, index) => (
             <div 
               key={item.title}
-              className="bg-card rounded-3xl p-8 text-center shadow-elegant hover:shadow-glow transition-all duration-300 group animate-slide-up"
+              className="bg-gradient-to-b from-orange-600 to-slate-900 rounded-3xl p-8 text-center shadow-elegant hover:shadow-glow transition-all duration-300 group animate-slide-up"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="w-16 h-16 bg-gradient-primary rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-all duration-300">
@@ -62,7 +62,7 @@ export const Contact = () => {
               
               <div className="space-y-2 mb-6">
                 {item.details.map((detail, idx) => (
-                  <p key={idx} className="text-muted-foreground">
+                  <p key={idx} className="text-white">
                     {detail}
                   </p>
                 ))}
@@ -92,7 +92,7 @@ export const Contact = () => {
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button variant="secondary" size="lg" className="text-lg px-8 py-4 bg-white text-primary hover:bg-white/90">
-                Start Free Trial
+                Book Now
               </Button>
               <Button variant="ghost-hero" size="lg" className="text-lg px-8 py-4">
                 Schedule Tour
