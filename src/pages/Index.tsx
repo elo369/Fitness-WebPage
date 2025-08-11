@@ -4,6 +4,8 @@ import { About } from "@/components/About";
 import { Services } from "@/components/Services";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
+import JoinMemberForm from "@/components/Form";
+import GymSection from "@/components/GymSection";
 
 const Index = () => {
   return (
@@ -13,13 +15,15 @@ const Index = () => {
         <Hero />
       </div>
       <div id="about">
-        <About />
+        {/* <About /> */}
+        <GymSection/>
       </div>
       <div id="services">
         <Services />
       </div>
       <div id="contact">
         <Contact />
+        <JoinMemberForm/>
       </div>
       <Footer />
     </div>
