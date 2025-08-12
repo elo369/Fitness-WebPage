@@ -15,12 +15,12 @@ export default function GymSection({
   images = [
     // Example Unsplash images (feel free to replace with local imports or your own URLs)
     "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=1200&q=80",
-    "https://images.unsplash.com/photo-1558611848-73f7eb4001d8?auto=format&fit=crop&w=1200&q=80",
-    "https://images.unsplash.com/photo-1583454110551-21f6b5c5f6b1?auto=format&fit=crop&w=1200&q=80",
-    "https://images.unsplash.com/photo--7f94f7f6d8b5?auto=format&fit=crop&w=1200&q=80",
-    "https://images.unsplash.com/photo--aa88f22d8d2f?auto=format&fit=crop&w=1200&q=80",
-    "file:///C:/Users/rohit/OneDrive/Desktop/https://images.stockcake.com/public/a/2/7/a275f6cd-47bc-4b01-a00e-03f843d44189_large/industrial-fitness-space-stockcake.jpghttps://www.google.com/url?sa=i&url=https%3A%2F%2Fstockcake.com%2Fi%2Findustrial-fitness-space_1545738_1177415&psig=AOvVaw2gEhsoxSdHSGCkeUKcXJ__&ust=1754757097581000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCODBjf3R-44DFQAAAAAdAAAAABAf%20Fitness%20Website/public/a275f6cd-47bc-4b01-a00e-03f843d44189_large.webphttps://images.unsplash.com/photo-1519861531928-0c3e8b7d6d4d?auto=format&fit=crop&w=1200&q=80",
-  ],
+    "people.webp",
+    "gymLook.jpg",
+    "outsideGym.jpg",
+    "runningGuys.jpg",
+    "fitBoy.jpg",
+],
 }) {
   const [isOpen, setIsOpen] = useState(false);
   const [index, setIndex] = useState(0);
@@ -45,8 +45,8 @@ export default function GymSection({
   return (
     <section className="py-8 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto text-center mb-6">
-        <h2 className="text-2xl sm:text-3xl font-bold">{title}</h2>
-        <p className="mt-2 text-sm sm:text-base text-gray-500">{subtitle}</p>
+        <h2 className="text-2xl sm:text-5xl font-bold text-transparent bg-clip-text bg-gradient-primary ml-3">{title}</h2>
+        <p className="mt-2 text-lg sm:text-base text-gray-500">{subtitle}</p>
       </div>
 
       {/* Grid */}
