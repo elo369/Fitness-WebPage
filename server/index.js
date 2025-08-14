@@ -11,7 +11,7 @@ connectDB()
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 app.use(cors({
-    origin:"http://localhost:8080",
+    origin:`${process.env.FRONTEND}`,
     credentials:true
 }))
 app.use("/api",Router)
