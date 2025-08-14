@@ -15,7 +15,7 @@ const JoinMemberForm = () => {
      console.log("Phone:", phone);
      setName("")
      setPhone("")
-     let post = await axios.post(`${url}/api/submit`,{
+     let post = await axios.post(`${url}/submit`,{
        name,
        number:phone
       })
