@@ -20,7 +20,7 @@ export const Navigation = () => {
   };
 
   return (
-    <nav className="fixed top-0 w-full     z-50  animate-fade-in">
+    <nav className="fixed top-0 w-full  bg-black   z-50  animate-fade-in">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
