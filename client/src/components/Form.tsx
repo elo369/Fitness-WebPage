@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { serverUrl } from "@/helpers/Constanst";
 
 const JoinMemberForm = () => {
   const [name, setName] = useState<string>("");
   const [phone, setPhone] = useState<string>("");
 
  let url = import.meta.env.VITE_DB_ROUTE
+
+ let localUrl = import.meta.env.VITE_LOCALS
 
   const handleJoin = async (e:React.FormEvent) => {    
     e.preventDefault()
@@ -15,8 +18,8 @@ const JoinMemberForm = () => {
      console.log("Phone:", phone);
      setName("")
      setPhone("")
-     let post = await axios.post(`${url}/submit`,{
-       name,
+     let post = await axios.post(`${serverUrl}/submit`,{
+      name: name,
        number:phone
       })
       console.log(post)

@@ -1,0 +1,1 @@
+export const serverUrl = import.meta.env.VITE_DB_ROUTE || "http://localhost:5000/api"
