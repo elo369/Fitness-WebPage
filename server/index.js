@@ -18,6 +18,8 @@ app.use(cors({
 }))
 app.use("/api",Router)
 
-app.listen(5000,()=>{
-    console.log("server run")
-})
+// app.listen(5000,()=>{
+//     console.log("server run")
+// })
+
+export default app
