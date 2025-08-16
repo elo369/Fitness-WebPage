@@ -11,8 +11,10 @@ connectDB()
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 app.use(cors({
-    origin:[process.env.FRONTEND,process.env.LOCAL],
-    credentials:true
+    origin:["https://fitness-web-page-6kvl.vercel.app",process.env.FRONTEND,process.env.LOCAL],
+    credentials:true,
+      methods: ["GET", "POST", "PUT", "DELETE"],
+      allowedHeaders: ["Content-Type", "Authorization"],
 }))
 app.use("/api",Router)
 
