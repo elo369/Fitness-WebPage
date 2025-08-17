@@ -11,7 +11,7 @@ export const submit = async (req, res) => {
     });
 
     form.save();
-
+    console.log(form)
     res.status(200).json({
       status: "success",
       message: "User retrieved successfully",
