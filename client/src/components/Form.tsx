@@ -21,6 +21,8 @@ const JoinMemberForm = () => {
      let post = await axios.post(`${serverUrl}/submit`,{
       name: name,
        number:phone
+      },{
+        headers: { "Content-Type": "application/json" }
       })
       console.log(post)
  
