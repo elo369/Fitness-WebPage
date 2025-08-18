@@ -10,7 +10,7 @@ export const submit = async (req, res) => {
       number,
     });
 
-    form.save();
+    await form.save();
     console.log(form)
     res.status(200).json({
       status: "success",

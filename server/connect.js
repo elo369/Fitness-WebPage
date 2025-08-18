@@ -4,7 +4,7 @@ import mongoose from "mongoose";
 export let  connectDB = async ()=>{
     try {
         if(mongoose.connection.readyState === 0){
-        let connect = await mongoose.connect(process.env.DATABASE,{
+        let connect = await mongoose.connect(process.env.MONGO_URI,{
             useNewUrlParser: true,
             useUnifiedTopology: true,
             serverSelectionTimeoutMS: 5000
@@ -20,6 +20,6 @@ export let  connectDB = async ()=>{
     }
     } catch (error) {
         console.log(error)
-        process.exit(1)
+        throw error
     }
 }
