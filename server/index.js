@@ -5,13 +5,14 @@ import cors from "cors"
 import dotenv from "dotenv"
 let app = express()
 
-dotenv.config()
+dotenv.config({quiet:true})
 connectDB()
 
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 app.use(cors({
-    origin:"https://fitness-web-page-6kvl.vercel.app",
+    origin:"*",
+    // origin:"https://fitness-web-page-6kvl.vercel.app",
     credentials:true,
       methods: ["GET", "POST", "PUT", "DELETE","OPTIONS"],
       allowedHeaders: ["Content-Type", "Authorization"]
