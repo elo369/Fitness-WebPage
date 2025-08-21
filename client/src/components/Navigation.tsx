@@ -3,8 +3,6 @@ import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { motion } from "framer-motion";
 
-
-
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -28,10 +26,10 @@ export const Navigation = () => {
           {/* Logo */}
           <motion.div
             {...{
-    initial: { opacity: 0, y: 0 },
-    whileInView: { opacity: 1, y: 10 },
-    viewport: { once: true }
-  }}
+              initial: { opacity: 0, y: 0 },
+              whileInView: { opacity: 1, y: 10 },
+              viewport: { once: true },
+            }}
             className="flex items-center space-x-2"
           >
             <div className="w-10 h-10 bg-gradient-to-r from-amber-200 to-yellow-700 rounded-lg flex items-center justify-center">
