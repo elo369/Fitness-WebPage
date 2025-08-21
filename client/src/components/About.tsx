@@ -52,7 +52,7 @@ export const About = () => {
           >
             Why Choose
             <span className="text-yellow-400">
-              HM Fitness?
+              XT Fitness?
             </span>
           </motion.h2>
           <motion.p
@@ -80,7 +80,7 @@ export const About = () => {
               className="text-center group shadow-[5px_5px_20px_0px] shadow-[#282525]  p-4 rounded-md bg-[#0d0d0d]"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="w-20 h-20 bg-gradient-primary rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-all duration-300 shadow-glow">
+              <div className="w-20 h-20 bg-gradient-to-r from-amber-200 to-yellow-700 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-all duration-300 shadow-glow">
                 <feature.icon className="w-10 h-10 text-white" />
               </div>
               <h3 className="text-2xl text-white font-bold mb-4">{feature.title}</h3>
@@ -105,10 +105,10 @@ export const About = () => {
             </h3>
             <p className="text-xl text-black mb-8 max-w-2xl mx-auto">
               Take the first step towards a healthier you. Join hundreds of
-              satisfied members who've found their fitness home at HM Fitness.
+              satisfied members who've found their fitness home at XT Fitness.
             </p>
             <Button variant="default" size="lg" className="text-lg px-8 py-4 bg-orange-700">
-              Join HM Fitness Today
+              Join XT Fitness Today
             </Button>
           </div>
         </motion.div>

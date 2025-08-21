@@ -45,7 +45,7 @@ export default function GymSection({
   return (
     <section className="py-8 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto text-center mb-6">
-        <h2 className="text-2xl sm:text-5xl font-bold text-transparent bg-clip-text bg-gradient-primary ml-3">{title}</h2>
+        <h2 className="text-2xl sm:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-amber-200 to-yellow-700 ml-3">{title}</h2>
         <p className="mt-2 text-lg sm:text-base text-gray-500">{subtitle}</p>
       </div>
 

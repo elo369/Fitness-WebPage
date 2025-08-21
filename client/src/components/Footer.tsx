@@ -10,8 +10,8 @@ export const Footer = () => {
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">HM</span>
+              <div className="w-10 h-10 bg-gradient-to-r from-amber-200 to-yellow-700 rounded-lg flex items-center justify-center">
+                <span className="text-white font-bold text-lg">XT</span>
               </div>
               <span className="text-2xl font-bold">Fitness</span>
             </div>
@@ -74,7 +74,7 @@ export const Footer = () => {
         <div className="border-t border-secondary-foreground/10 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-secondary-foreground/60 text-sm">
-              © {currentYear} HM Fitness. All rights reserved.
+              © {currentYear} XT Fitness. All rights reserved.
             </p>
             <div className="flex space-x-6 text-sm">
               <a href="#" className="text-secondary-foreground/60 hover:text-primary transition-colors duration-300">Privacy Policy</a>

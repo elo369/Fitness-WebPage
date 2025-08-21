@@ -36,9 +36,9 @@ export const Services = () => {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-6xl font-bold mb-6">
+          <h2 className="text-4xl md:text-6xl font-bold mb-6 text-orange-700">
             Our 
-            <span className="text-transparent bg-clip-text bg-gradient-primary ml-3">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 to-yellow-700  ml-3">
               Services
             </span>
           </h2>
@@ -58,7 +58,7 @@ export const Services = () => {
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="flex items-start gap-6">
-                <div className="w-16 h-16 bg-gradient-primary rounded-2xl flex items-center justify-center group-hover:scale-110 transition-all duration-300 flex-shrink-0">
+                <div className="w-16 h-16 bg-gradient-to-r from-amber-200 to-yellow-700 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-all duration-300 flex-shrink-0">
                   <service.icon className="w-8 h-8 text-white" />
                 </div>
                 

@@ -23,7 +23,9 @@ const Index = () => {
       </div>
       <div id="contact">
         <Contact />
+        <div id="joinNow">
         <JoinMemberForm/>
+        </div>
       </div>
       <Footer />
     </div>

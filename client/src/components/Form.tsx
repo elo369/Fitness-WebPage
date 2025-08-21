@@ -36,7 +36,7 @@ const JoinMemberForm = () => {
 
   return (
     <div className="flex flex-col items-center p-5 max-w-sm mx-auto bg-gradient-to-b from-orange-600 to-slate-900 rounded-2xl shadow-md  mb-6 px-4">
-      <h2 className="text-xl font-semibold mb-4">Join Us</h2>
+      <h2 className="text-xl font-bold mb-4">Join Us</h2>
 <form onSubmit={handleJoin}>
       <input
         type="text"

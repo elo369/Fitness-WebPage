@@ -15,8 +15,8 @@ export const Hero = () => {
       <div className="relative z-10 text-center px-4 max-w-4xl py-14 sm:py-0 mx-auto">
         <h1 className="text-5xl md:text-7xl font-bold text-white mb-6  animate-fade-in">
           Transform Your Life at
-          <span className="block   text-8xl items-center text-transparent bg-clip-text bg-gradient-primary bg-black p-6">
-            HM <span className="text-white bg-gradient-primary px-4 py-1 rounded-md text-6xl text-center">FITNESS</span> 
+          <span className="block   text-8xl items-center text-transparent bg-clip-text bg-gradient-to-r from-amber-200 to-yellow-700 bg-black p-6">
+            XT <span className="text-white bg-gradient-to-r from-amber-200 to-yellow-700 px-4 py-1 rounded-md text-6xl text-center">FITNESS</span> 
           </span>
         </h1>
         

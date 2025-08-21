@@ -34,9 +34,9 @@ export const Contact = () => {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-orange-500">
             Get In 
-            <span className="text-transparent bg-clip-text bg-gradient-primary ml-3">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-200 to-yellow-700 ml-3">
               Touch
             </span>
           </h2>
@@ -47,14 +47,14 @@ export const Contact = () => {
         </div>
 
         {/* Contact Cards */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+        {/* <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           {contactInfo.map((item, index) => (
             <div 
               key={item.title}
               className="bg-gradient-to-b from-orange-600 to-slate-900 rounded-3xl p-8 text-center shadow-elegant hover:shadow-glow transition-all duration-300 group animate-slide-up"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="w-16 h-16 bg-gradient-primary rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-all duration-300">
+              <div className="w-16 h-16 bg-gradient-to-r from-amber-200 to-yellow-700 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-all duration-300">
                 <item.icon className="w-8 h-8 text-white" />
               </div>
               
@@ -77,16 +77,48 @@ export const Contact = () => {
               </Button>
             </div>
           ))}
+        </div> */}
+
+        <div className="bg-slate-900 rounded-3xl p-10 shadow-elegant w-[600px] text-center mx-auto border border-white my-10">
+  
+  <div className="grid md:grid-cols-2 gap-8 ">
+    {contactInfo.map((item, index) => (
+      <div key={item.title} className="flex items-start space-x-4 animate-slide-up" style={{ animationDelay: `${index * 0.1}s` }}>
+        
+        {/* Icon */}
+        <div className="w-14 h-14 bg-gradient-to-r from-amber-200 to-yellow-700 rounded-2xl flex items-center justify-center flex-shrink-0">
+          <item.icon className="w-7 h-7 text-white" />
         </div>
+        
+        {/* Content */}
+        <div>
+          <h3 className="text-lg font-bold mb-2 text-white ">{item.title}</h3>
+          <div className="space-y-1 mb-2">
+            {item.details.map((detail, idx) => (
+              <p key={idx} className="text-gray-200">{detail}</p>
+            ))}
+          </div>
+          <Button 
+            variant="outline" 
+            size="sm" 
+            className="group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300"
+          >
+            {item.action}
+          </Button>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
 
         {/* CTA Section */}
         <div className="text-center animate-scale-in">
-          <div className="bg-gradient-primary rounded-3xl p-8 md:p-12 text-center shadow-glow max-w-4xl mx-auto">
+          <div className="bg-gradient-to-r from-amber-200 to-yellow-700 rounded-3xl p-8 md:p-12 text-center shadow-glow max-w-4xl mx-auto">
             <h3 className="text-3xl md:text-4xl font-bold text-white mb-6">
               Ready to Transform Your Life?
             </h3>
             <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-              Join the HM Fitness community today and discover what you're truly capable of. 
+              Join the XT Fitness community today and discover what you're truly capable of. 
               Your strongest self is waiting.
             </p>
             
