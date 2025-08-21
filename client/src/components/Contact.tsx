@@ -2,6 +2,13 @@ import { Button } from "@/components/ui/button";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 
 export const Contact = () => {
+
+  const phoneNumber = "+918530834693"; // Replace with your number
+
+  const handleCall = () => {
+    window.location.href = `tel:${phoneNumber}`;
+  };
+
   const contactInfo = [
     {
       icon: MapPin,
@@ -13,6 +20,7 @@ export const Contact = () => {
       icon: Phone,
       title: "Call Us",
       details: ["(555) 123-4567", "Mon-Fri: 6AM-10PM"],
+      call:handleCall,
       action: "Call Now"
     },
     {
@@ -29,6 +37,7 @@ export const Contact = () => {
     }
   ];
 
+  
   return (
     <section className="py-20 ">
       <div className="container mx-auto px-4">
@@ -47,39 +56,7 @@ export const Contact = () => {
         </div>
 
         {/* Contact Cards */}
-        {/* <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-          {contactInfo.map((item, index) => (
-            <div 
-              key={item.title}
-              className="bg-gradient-to-b from-orange-600 to-slate-900 rounded-3xl p-8 text-center shadow-elegant hover:shadow-glow transition-all duration-300 group animate-slide-up"
-              style={{ animationDelay: `${index * 0.1}s` }}
-            >
-              <div className="w-16 h-16 bg-gradient-to-r from-amber-200 to-yellow-700 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-all duration-300">
-                <item.icon className="w-8 h-8 text-white" />
-              </div>
-              
-              <h3 className="text-xl font-bold mb-4">{item.title}</h3>
-              
-              <div className="space-y-2 mb-6">
-                {item.details.map((detail, idx) => (
-                  <p key={idx} className="text-white">
-                    {detail}
-                  </p>
-                ))}
-              </div>
-              
-              <Button 
-                variant="outline" 
-                size="sm" 
-                className="w-full group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300"
-              >
-                {item.action}
-              </Button>
-            </div>
-          ))}
-        </div> */}
-
-        <div className="bg-slate-900 rounded-3xl p-10 shadow-elegant w-[600px] text-center mx-auto border border-white my-10">
+        <div className="bg-slate-900 rounded-3xl p-10 shadow-elegant md:w-[600px] text-center mx-auto border border-white my-10">
   
   <div className="grid md:grid-cols-2 gap-8 ">
     {contactInfo.map((item, index) => (
@@ -98,7 +75,8 @@ export const Contact = () => {
               <p key={idx} className="text-gray-200">{detail}</p>
             ))}
           </div>
-          <Button 
+          <Button
+            onClick={item.call}
             variant="outline" 
             size="sm" 
             className="group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300"

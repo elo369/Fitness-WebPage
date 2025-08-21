@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import { motion } from "motion/react"
+import { motion } from "motion/react";
 
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,10 +24,11 @@ export const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <motion.div 
-           initial={{ opacity: 0,y:0 }}
-           whileInView={{ opacity: 1,y:10 }}
-          className="flex items-center space-x-2">
+          <motion.div
+            initial={{ opacity: 0, y: 0 }}
+            whileInView={{ opacity: 1, y: 10 }}
+            className="flex items-center space-x-2"
+          >
             <div className="w-10 h-10 bg-gradient-to-r from-amber-200 to-yellow-700 rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-lg">XT</span>
             </div>
@@ -49,10 +50,8 @@ export const Navigation = () => {
 
           {/* Desktop CTA */}
           <div className="hidden md:block">
-            <Button variant="default" size="sm" className="bg-yellow-600" >
-              <a href="#joinNow">
-              Join Now
-              </a>
+            <Button variant="default" size="sm" className="bg-yellow-600">
+              <a href="#joinNow">Join Now</a>
             </Button>
           </div>
 
@@ -83,13 +82,13 @@ export const Navigation = () => {
                 </a>
               ))}
               <div className="px-4 pt-2">
-                <Button 
-                      onClick={handleCall}
-                variant="default" 
-                size="sm" 
-                className="w-full"
+                <Button
+                  onClick={handleCall}
+                  variant="default"
+                  size="sm"
+                  className="w-full"
                 >
-                  Join Now
+                  <a href="#joinNow">Join Now</a>
                 </Button>
               </div>
             </div>

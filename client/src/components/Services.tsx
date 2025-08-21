@@ -75,9 +75,9 @@ export const Services = () => {
                     ))}
                   </ul>
                   
-                  <Button variant="outline" className="group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300">
+                  {/* <Button variant="outline" className="group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300">
                     Learn More
-                  </Button>
+                  </Button> */}
                 </div>
               </div>
             </div>
