@@ -10,7 +10,7 @@ const JoinMemberForm = () => {
 
  let localUrl = import.meta.env.VITE_LOCALS
 
-  const handleJoin = async (e:React.FormEvent) => {    
+  const handleJoin = async (e) => {    
     e.preventDefault()
    try {
      console.log("Join clicked");

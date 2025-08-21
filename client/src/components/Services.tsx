@@ -1,4 +1,3 @@
-import React from "react";
 import { Button } from "@/components/ui/button";
 import personalTrainingImage from "@/assets/personal-training1.jpg";
 import { Dumbbell, Users2, Clock, Zap } from "lucide-react";

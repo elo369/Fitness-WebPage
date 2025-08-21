@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Heart, Users, Trophy, Target } from "lucide-react";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 
 export const About = () => {
   const features = [
@@ -44,10 +44,11 @@ export const About = () => {
         {/* Section Header */}
         <div className="text-center mb-16 ">
           <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.3 }}
+           {...{ initial:{ opacity: 0, y: 30 },
+            whileInView:{ opacity: 1, y: 0 },
+            viewport:{ once: true },
+            transition:{ duration: 0.3 },
+          }}
             className="text-4xl md:text-5xl font-bold mb-6 text-white"
           >
             Why Choose
@@ -56,10 +57,11 @@ export const About = () => {
             </span>
           </motion.h2>
           <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 1 }}
+            {...{ initial:{ opacity: 0, y: 30 },
+            whileInView:{ opacity: 1, y: 0 },
+            viewport:{ once: true },
+            transition:{ duration: 0.3 },
+          }}
             className="text-xl text-muted-foreground max-w-3xl mx-auto"
           >
             We're more than just a gym – we're your partners in building a
@@ -72,10 +74,11 @@ export const About = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16 ">
           {features.map((feature, index) => (
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 1 }}
+             {...{ initial:{ opacity: 0, y: 30 },
+            whileInView:{ opacity: 1, y: 0 },
+            viewport:{ once: true },
+            transition:{ duration: 0.3 },
+          }}
               key={feature.title}
               className="text-center group shadow-[5px_5px_20px_0px] shadow-[#282525]  p-4 rounded-md bg-[#0d0d0d]"
               style={{ animationDelay: `${index * 0.1}s` }}
@@ -93,10 +96,11 @@ export const About = () => {
 
         {/* CTA Section */}
         <motion.div
-           initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.3 }}
+          {...{ initial:{ opacity: 0, y: 30 },
+            whileInView:{ opacity: 1, y: 0 },
+            viewport:{ once: true },
+            transition:{ duration: 0.3 },
+          }}
           className="text-center animate-scale-in "
         >
           <div className=" rounded-3xl p-8 md:p-12 shadow-glow max-w-4xl mx-auto bg-gradient-to-r from-red-600 to-orange-500">
