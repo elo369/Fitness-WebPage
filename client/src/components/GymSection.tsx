@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import { X, ArrowLeft, ArrowRight } from "lucide-react";
 
 // GymSection.jsx
