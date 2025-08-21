@@ -14,26 +14,30 @@ export const Contact = () => {
       icon: MapPin,
       title: "Visit Us",
       details: ["123 Fitness Street", "Health City, HC 12345"],
-      action: "Get Directions"
+      action: "Get Directions",
+      onClick: () => window.open("https://maps.google.com?q=123+Fitness+Street")
     },
     {
       icon: Phone,
       title: "Call Us",
       details: ["(555) 123-4567", "Mon-Fri: 6AM-10PM"],
-      call:handleCall,
-      action: "Call Now"
+      action: "Call Now",
+    onClick: () => window.location.href = "tel:+918530834693"
     },
     {
       icon: Mail,
       title: "Email Us",
       details: ["info@fmfitness.com", "support@fmfitness.com"],
-      action: "Send Email"
+      action: "Send Email",
+          onClick: () => window.location.href = "mailto:info@fmfitness.com"
     },
     {
       icon: Clock,
       title: "Hours",
       details: ["24/7 Gym Access", "Staff: Mon-Fri 6AM-10PM"],
-      action: "View Schedule"
+      action: "View Schedule",
+          onClick: () => alert("Gym is open 24/7. Staff available Mon-Fri 6AM-10PM.")
+
     }
   ];
 
@@ -76,7 +80,7 @@ export const Contact = () => {
             ))}
           </div>
           <Button
-            onClick={item.call}
+            onClick={item.onClick}
             variant="outline" 
             size="sm" 
             className="group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300"
