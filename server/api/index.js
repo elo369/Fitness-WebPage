@@ -21,7 +21,7 @@ app.use(cors({
 }))
 app.use("/api",Router)
 
-app.get((req,res)=>{
+app.get("/",(req,res)=>{
  res.send("server run")
 })
 
