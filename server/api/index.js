@@ -1,11 +1,11 @@
 import express from "express"
-import Router from "./router/router.js"
-import {connectDB} from "./connect.js"
+import Router from "../router/router.js"
+import {connectDB} from "../connect.js"
 import cors from "cors"
 import dotenv from "dotenv"
 let app = express()
 
-dotenv.config({quiet:true})
+dotenv.config()
 connectDB()
 
 // const PORT = process.env.PORT || 5000;
