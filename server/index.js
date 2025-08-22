@@ -8,7 +8,7 @@ let app = express()
 dotenv.config({quiet:true})
 connectDB()
 
-const PORT = process.env.PORT || 5000;
+// const PORT = process.env.PORT || 5000;
 
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
@@ -21,8 +21,8 @@ app.use(cors({
 }))
 app.use("/api",Router)
 
-app.listen(PORT,()=>{
-    console.log("server run")
-})
+// app.listen(PORT,()=>{
+//     console.log("server run")
+// })
 
 export default app
