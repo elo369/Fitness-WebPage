@@ -13,8 +13,10 @@ export const Hero = () => {
       
       {/* Content */}
       <div className="relative z-10 text-center px-4 max-w-4xl py-14 sm:py-0 mx-auto">
-        <h1 className="text-4xl pt-3 relative sm:top-0 top-4 md:text-7xl font-bold text-white mb-6  animate-fade-in items-center">
+        <h1 className="text-4xl pt-3 relative sm:top-0 top-4 md:text-7xl font-bold text-white mb-6  animate-fade-in ">
+          <div className="sm:w-full w-[70vw] m-auto ">
           Transform Your Life at
+          </div>
           <span className="block   text-8xl items-center text-transparent bg-clip-text bg-gradient-to-r from-amber-200 to-yellow-700 bg-black p-6">
             XT <span className="text-white bg-gradient-to-r from-amber-200 to-yellow-700 px-4 py-1 rounded-md text-6xl text-center">FITNESS</span> 
           </span>
